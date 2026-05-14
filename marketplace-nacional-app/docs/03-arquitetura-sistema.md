@@ -23,6 +23,12 @@
 | Observabilidade | **OpenTelemetry** + **Grafana** + **Loki** ou Datadog | — |
 | CI/CD | **GitHub Actions** + deploy em **ECS/Kubernetes** ou **Cloud Run** | — |
 
+## 2.1 Compra e pagamento (decisão atual)
+
+**O app não processa pagamento da compra** do item anunciado. A plataforma entrega **descoberta, filtros, detalhe e contato**; **fechamento comercial e pagamento** ocorrem **fora** do app (ex.: WhatsApp, ligação, presencial). Por isso **não** entram no desenho base: gateway C2C, split, escrow, conciliação de comissão sobre venda ou webhooks de captura de cartão **para a compra do bem**.
+
+Eventual **cobrança de assinatura ou plano do anunciante** (receita da plataforma) é decisão de produto separada e, se implementada no app, deve ser validada contra as **guidelines** Apple/Google (serviço digital da plataforma vs bem físico anunciado).
+
 ## 3. Diagrama de contexto (C4 — nível 1)
 
 ```mermaid
@@ -52,8 +58,11 @@ flowchart TB
     MAP[Mapas / geocoding]
     PUSH[Push APNs + FCM]
     MAIL[E-mail / SMS]
-    PAY[Gateway pagamento - opcional]
     ANLY[Analytics / Crash]
+  end
+
+  subgraph ForaPlat["Fora da plataforma (decisão atual)"]
+    CANAIS[Contato e pagamento entre comprador e anunciante]
   end
 
   C --> IOS
@@ -72,9 +81,10 @@ flowchart TB
   SVC --> MAP
   SVC --> PUSH
   SVC --> MAIL
-  SVC --> PAY
   IOS --> ANLY
   AND --> ANLY
+  C -.->|após contato| CANAIS
+  V -.->|negociação| CANAIS
 ```
 
 ## 4. Diagrama de containers (C4 — nível 2, simplificado)
@@ -155,3 +165,4 @@ Recomenda-se pasta `docs/adr/` com decisões curtas, por exemplo:
 - ADR-001: PostGIS vs busca apenas por cidade.
 - ADR-002: OpenSearch vs Meilisearch no MVP.
 - ADR-003: React Native vs Flutter (critérios: time, performance, libs do nicho).
+- ADR-004: Compra e pagamento **fora do app** (classificado); sem gateway C2C no escopo base.

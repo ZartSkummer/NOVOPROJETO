@@ -43,7 +43,7 @@ flowchart TB
 
 - Galeria com zoom; indicador de posição.
 - Bloco “Ficha técnica” (atributos chave).
-- CTA fixo inferior: **Contatar** / **Ligar** / **WhatsApp** (definir política de exposição de telefone).
+- CTA fixo inferior: **Contatar** / **Ligar** / **WhatsApp** (definir política de exposição de telefone). **Não** incluir “Comprar” ou “Pagar no app” neste modelo — o fechamento é **externo**; o copy deve deixar isso claro para evitar expectativa errada do usuário.
 - Ações secundárias: favoritar, compartilhar, denunciar.
 
 ### 3.4 Wizard de publicação

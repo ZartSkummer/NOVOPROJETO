@@ -93,7 +93,7 @@ erDiagram
 
 - Publicação de anúncio: transação curta + job assíncrono para thumbnails e indexação.
 - **Optimistic locking** (`version` ou `updated_at`) em edições concorrentes.
-- Idempotência em webhooks de pagamento (se existir).
+- Idempotência em webhooks apenas se houver integrações futuras (ex.: **assinatura** do anunciante via gateway — fora do escopo da **compra C2C**, que permanece externa).
 
 ## 7. Retenção e LGPD
 

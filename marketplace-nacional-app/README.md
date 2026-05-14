@@ -2,6 +2,8 @@
 
 Pasta de planejamento criada para responder ao briefing do cliente: **app iOS + Android** com **filtros por localização e modelo** (ou atributo equivalente), **abrangência nacional**, estilo **marketplace de classificados**.
 
+**Decisão confirmada:** o **pagamento da compra** é **fora do app** — o usuário vê o anúncio, entra em contato com o anunciante e **fecha valor e pagamento** por canais externos (ex.: WhatsApp, ligação, presencial). O app **não** processa checkout da transação C2C.
+
 ## Documentação
 
 Toda a análise multidisciplinar está em:
@@ -17,7 +19,8 @@ Toda a análise multidisciplinar está em:
 | Prazo “redondo” | ~6–12 meses |
 | LOC total (ordem de grandeza) | ~80k–250k |
 | Investimento software house | ~R$ 350k–1,5M+ (conforme escopo) |
+| Pagamento da compra | **Fora do app** (vitrine + contato) |
 
 ## Próximo passo recomendado
 
-Workshop de descoberta com o cliente para fechar **nicho**, **monetização**, **contato entre partes** e **nível de moderação** — estes itens definem mais o custo do que a escolha entre React Native e Flutter.
+Workshop de descoberta com o cliente para fechar **nicho**, **monetização da plataforma** (ex.: assinatura do anunciante, destaque — independente de onde a compra é paga), **canais de contato** permitidos e **nível de moderação**.

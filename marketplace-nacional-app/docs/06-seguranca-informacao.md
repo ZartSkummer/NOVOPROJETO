@@ -33,7 +33,7 @@
 - TLS 1.2+ obrigatório; **HSTS** no domínio público.
 - Validação estrita de entrada (tamanho, tipo, enums).
 - **CORS** restritivo no admin web.
-- **Idempotency-Key** em operações de escrita críticas (pagamentos, publicação paga).
+- **Idempotency-Key** em operações de escrita críticas (ex.: publicação paga, se houver; criação de anúncio com upload).
 - Segredos em vault (AWS Secrets Manager, etc.); nunca em repositório.
 
 ## 5. Armazenamento de mídia
@@ -60,7 +60,7 @@
 
 - Declarar coleta de localização com strings claras (`Info.plist`, Play Data Safety).
 - Revisar guidelines para **UGC** (conteúdo gerado por usuário): moderação e denúncia.
-- Se houver **pagamentos digitais**: regras de comissão da loja vs web (estratégia de negócio + jurídico).
+- **Escopo atual (compra fora do app):** o app funciona como **classificado** — em geral **não** há IAP para o **bem anunciado**; ainda assim, evitar fluxos que **contornem** as regras das lojas (ex.: vender acesso digital ao item **dentro** do app sem o modelo de compra permitido). Se no futuro existir **assinatura/plano do anunciante** vendido pelo app, revisar o capítulo de **compras digitais** das guidelines e o jurídico.
 
 ## 9. Resposta a incidentes
 

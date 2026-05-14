@@ -2,6 +2,11 @@
 
 Este pacote reúne análise multidisciplinar para um **aplicativo de vendas/listagens** com escopo nacional, **filtros por localização e por modelo** (ou equivalente do nicho), disponível na **App Store** e **Google Play**, inspirado conceitualmente no modelo **Webmotors**, porém para **outro segmento**.
 
+## Decisão de produto (confirmada)
+
+- **Pagamento da compra**: **fora do aplicativo**. O usuário **não** finaliza a transação do bem/serviço anunciado por checkout, PIX ou cartão dentro do app.
+- **Papel do app**: descoberta, filtros, detalhe do anúncio e **contato com o anunciante** (telefone, WhatsApp, e-mail ou equivalente); o **fechamento comercial e o pagamento** ocorrem nos canais acordados entre as partes, fora da plataforma.
+
 ## Índice dos documentos
 
 | # | Documento | Conteúdo principal |
@@ -19,12 +24,12 @@ Este pacote reúne análise multidisciplinar para um **aplicativo de vendas/list
 ## Premissas gerais (a validar com o cliente)
 
 - **Nicho** não especificado: exemplos de “modelo” podem ser SKU, versão, ano, categoria técnica etc., conforme o segmento.
-- **“Redondo”** aqui significa: MVP estável em produção + hardening, métricas, moderação básica, pagamentos (se houver) e suporte inicial — não apenas protótipo.
+- **“Redondo”** aqui significa: MVP estável em produção + hardening, métricas, moderação básica e suporte inicial — **sem** obrigatoriedade de checkout in-app para a compra (fechamento **fora** do app).
 - Uso de **IA** acelera boilerplate, testes e documentação; **não** substitui decisões de produto, homologação nas lojas, compliance e operação.
 
 ## Glossário rápido
 
-- **MVP**: primeira versão utilizável com fluxo core (busca, detalhe, contato/cadastro mínimo).
+- **MVP**: primeira versão utilizável com fluxo core (busca, detalhe, **contato** com anunciante, cadastro/publicação mínimos) — **sem** checkout da compra no app.
 - **MMP**: produto minimamente *marketável* com qualidade de marca e sustentação.
 
 ---

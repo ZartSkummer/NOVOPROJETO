@@ -26,14 +26,23 @@
   - **B)** raio em km a partir do CEP ou GPS do usuário (mais valor, mais complexidade/LGPD).
 - Limite de fotos por anúncio e tamanho máximo por arquivo (ex.: 10 fotos, 8 MB cada — ajustar).
 
+### 3.1 Decisão confirmada — pagamento da compra
+
+- **Não** haverá checkout, PIX, cartão nem carteira **dentro do app** para o comprador pagar o **item anunciado**.
+- O app oferece **contato** com o anunciante; **negociação, entrega e pagamento** são **100% fora** da plataforma.
+- Métricas de produto devem refletir isso (ex.: “detalhe → contato” em vez de “detalhe → pagamento confirmado no app”).
+
 ## 4. Fluxos principais (user journeys)
 
-### 4.1 Comprador — busca até contato
+### 4.1 Comprador — busca até contato (compra fora do app)
 
 1. Abre app → home com destaques e atalhos de categoria.
 2. Aplica filtros (estado, cidade, modelo).
-3. Abre detalhe → vê fotos e dados → toca em **Contatar** (telefone, chat, ou formulário — definir).
-4. Opcional: salva em favoritos.
+3. Abre detalhe → vê fotos e dados → toca em **Contatar** (telefone, WhatsApp, e-mail ou link — definir política e LGPD).
+4. **Fora do app:** combina com o anunciante, paga e recebe o bem/serviço pelos canais combinados.
+5. Opcional no app: salva em favoritos.
+
+> **Não** incluir telas de checkout, carrinho ou “pagar agora” para o item, salvo mudança formal de escopo.
 
 ### 4.2 Vendedor — publicar anúncio
 
@@ -116,12 +125,12 @@ Legenda: **MVP** = primeira entrega; **MMP** = produto comercializável.
 
 ## 7. Fora de escopo inicial (explícito)
 
+- **Checkout / pagamento da compra no app** (PIX, cartão, carteira, escrow na plataforma) — **decisão atual: fora do escopo**; compra é por **contato externo**.
 - Leilão em tempo real.
-- Pagamento com escrow completo (sem especificação legal/financeira).
 - Motor de crédito/score (depende de parceiros e compliance).
 
 ## 8. Métricas de sucesso (produto)
 
-- Taxa de conversão busca → detalhe → contato.
+- Taxa de conversão busca → detalhe → **contato iniciado** (clique ligação/WhatsApp etc.).
 - Tempo médio até primeiro anúncio publicado (vendedor).
 - NPS ou CSAT pós-contato (MMP).

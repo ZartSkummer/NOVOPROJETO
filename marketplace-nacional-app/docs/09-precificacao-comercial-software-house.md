@@ -1,6 +1,6 @@
 # Precificação comercial — software house (Brasil, referência 2026)
 
-> Valores **indicativos** para briefing de marketplace móvel nacional com filtros por localização e modelo, apps iOS/Android e backend cloud. Ajustar por cidade da software house, porte da marca, SLAs e modelo de contrato (fixo vs time & material).
+> Valores **indicativos** para briefing de marketplace móvel nacional com filtros por localização e modelo, apps iOS/Android e backend cloud. **Premissa atual:** **sem** checkout in-app para a **compra do item** — vitrine + contato; pagamento **fora** do app. Ajustar por cidade da software house, porte da marca, SLAs e modelo de contrato (fixo vs time & material).
 
 ## 1. Como as casas costumam precificar
 
@@ -26,13 +26,15 @@
 
 ### 3.1 MVP (10–14 semanas de build + buffer lojas)
 
-- **R$ 250k – R$ 550k** — MVP enxuto, filtros cidade/UF + modelo, sem pagamento in-app complexo, admin mínimo ou apenas scripts internos.
+- **R$ 250k – R$ 550k** — MVP enxuto, filtros cidade/UF + modelo, **sem** gateway de compra no app, admin mínimo ou apenas scripts internos.
 - **R$ 450k – R$ 900k** — MVP “forte”: PostGIS/raio, moderação básica, painel admin simples, analytics, testes integração sólidos.
+
+> A ausência de **pagamento C2C in-app** tende a **reduzir** risco e esforço (menos integrações financeiras, conciliação e chargeback no produto). **Não** elimina custo de moderação, busca e mídia.
 
 ### 3.2 Produto redondo / MMP (6–12 meses total incluindo MVP)
 
 - **R$ 700k – R$ 1,5M** — hardening, anti-fraude básico, E2E estável, LGPD operacional, observabilidade madura, melhorias UX.
-- **> R$ 1,5M até R$ 2,5M+** — pagamentos/comissão com conciliação, chat in-app, recomendação, múltiplos perfis PJ, integrações pesadas, squads maiores.
+- **> R$ 1,5M até R$ 2,5M+** — cenários **não** exigidos pelo escopo atual de compra externa, exceto se o roadmap incluir **chat in-app** pesado, recomendação, múltiplos perfis PJ, integrações volumosas **ou** **futura** monetização transacional in-app (comissão, split, conciliação).
 
 ### 3.3 Custos recorrentes (não são “lucro da house”, mas entram no TCO do cliente)
 
@@ -42,7 +44,7 @@
 
 ## 4. O que eleva o preço rapidamente
 
-- **Pagamento** in-app e políticas das lojas + conciliação financeira.
+- **Se no futuro** houver **pagamento in-app** da compra: políticas das lojas + conciliação financeira + chargeback.
 - **Anti-fraude** e moderação em tempo real.
 - **Mapa** com clusters nacionais e performance.
 - **Chat** com moderação e mídia.
@@ -72,7 +74,7 @@
 ## 8. Premissas para validação antes de assinar valor
 
 - Nicho e taxonomia de “modelo” definidos.
-- Política de exposição de dados de contato.
+- Política de exposição de dados de contato (e confirmação de que **não** há checkout no app).
 - Decisão sobre mapa e GPS.
 - Metas de carga (usuários simultâneos, anúncios/mês).
 

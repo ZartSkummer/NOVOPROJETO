@@ -5,7 +5,7 @@
 ### 1.1 Fullstack / engenharia de produto
 
 - **Complexidade core**: CRUD de anúncios, mídia, autenticação, favoritos e filtros é **moderada**.
-- **Complexidade que eleva o projeto**: busca textual + filtros compostos + **geo** (raio, estado, CEP), paginação estável, consistência eventual de índices, upload de muitas imagens, notificações push, eventual **checkout/comissão** e painel administrativo.
+- **Complexidade que eleva o projeto**: busca textual + filtros compostos + **geo** (raio, estado, CEP), paginação estável, consistência eventual de índices, upload de muitas imagens, notificações push, **painel administrativo** e (opcional) chat ou leads rastreados — **sem** checkout in-app para a compra do item (decisão atual).
 - **Classificação**: **Média–Alta** para produto nacional com SLA percebido de “app grande”.
 
 ### 1.2 UX/UI
@@ -21,7 +21,7 @@
 ### 1.4 Segurança
 
 - **Alta relevância**, dificuldade **média** no MVP com boas práticas (OAuth2, rate limit, WAF, secrets).
-- Sobe para **alta** com pagamentos, KYC leve, anti-fraude e armazenamento sensível.
+- Sobe para **alta** com **KYC** pesado, anti-fraude agressivo e armazenamento sensível além do usual — ou se no futuro houver **pagamento in-app** da compra.
 
 ### 1.5 DBA / dados
 
@@ -64,8 +64,8 @@
 
 Inclui, entre outros: performance de busca, **painel admin** útil, **LGPD** end-to-end, anti-fraude básico, analytics, crash reporting, melhorias de UX, testes E2E estáveis, runbooks, backups testados.
 
-- **6 a 9 meses** (time 3–5 FTE) como referência.
-- **9 a 12 meses** se houver **pagamento in-app** ou comissão com conciliação, ou requisitos regulatórios extras.
+- **6 a 9 meses** (time 3–5 FTE) como referência, alinhado ao escopo **sem** gateway de compra no app.
+- **Até ~12 meses** se houver **chat in-app** maduro, requisitos regulatórios extras ou long tail de integrações — **não** é necessário alongar o prazo só por “pagamento in-app”, pois está **fora** do escopo atual.
 
 ### 3.3 Marcos sugeridos
 
@@ -93,7 +93,7 @@ LOC é **métrica fraca** sozinha; serve como **ordem de grandeza** para orçame
 
 Fatores que **empurram para cima**:
 
-- Chat in-app, negociação, lances, pagamento split.
+- Chat in-app, negociação, lances, **ou** futuro pagamento split / checkout no app.
 - Motor de recomendação próprio.
 - Múltiplos perfis (PF/PJ) com fluxos distintos.
 
