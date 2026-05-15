@@ -15,6 +15,7 @@ Este pacote reúne análise multidisciplinar para um **marketplace de serviços 
 | 07 | [07-qualidade-codigo-entrega.md](./07-qualidade-codigo-entrega.md) | Padrões, testes, CI/CD, definition of done |
 | 08 | [08-precificacao-software-house.md](./08-precificacao-software-house.md) | Faixas BRL, composição de squad, o que encarece o projeto |
 | 09 | [09-backlog-epico.md](./09-backlog-epico.md) | Lista épica do que precisa ser feito (discovery até go-to-market) |
+| 10 | [10-handbook-padroes-desenvolvimento.md](./10-handbook-padroes-desenvolvimento.md) | **Handbook** normativo: índices, migrações, qualidade (smells, dead code), testes, UX de erros, `/docs`, Definition of Done |
 
 ## Premissas gerais (a validar com o cliente)
 
