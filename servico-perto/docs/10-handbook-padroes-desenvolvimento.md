@@ -1,6 +1,6 @@
 # Handbook — Padrões de desenvolvimento (Cursor e equipa)
 
-Este documento é a **referência normativa** para construir e evoluir o software com **consistência**, **segurança**, **manutenibilidade** e **rastreabilidade**. Complementa os documentos [03-arquitetura.md](./03-arquitetura.md), [06-dba-dados.md](./06-dba-dados.md), [07-qualidade-codigo-entrega.md](./07-qualidade-codigo-entrega.md) e [05-seguranca-informacao.md](./05-seguranca-informacao.md).
+Este documento é a **referência normativa** para construir e evoluir o software com **consistência**, **segurança**, **manutenibilidade** e **rastreabilidade**. O [07-qualidade-codigo-entrega.md](./07-qualidade-codigo-entrega.md) resume **entrega e prioridades de teste** deste repositório; o detalhe normativo (smells, dead code, índices, migrações, DoD) está aqui. Complementa ainda [03-arquitetura.md](./03-arquitetura.md), [06-dba-dados.md](./06-dba-dados.md) e [05-seguranca-informacao.md](./05-seguranca-informacao.md).
 
 ---
 
@@ -111,6 +111,7 @@ Este documento é a **referência normativa** para construir e evoluir o softwar
 - [ ] Índices e constraints revistos para novas colunas/consultas.
 - [ ] Erros tratados de forma amigável; logs técnicos sem dados sensíveis.
 - [ ] Documentação em `/docs` atualizada quando a mudança alterar contrato, fluxo ou operação.
+- [ ] **Mobile-first (este projeto)**, quando a alteração afetar apps ou listagens públicas: acessibilidade básica; validação de performance em rede lenta (ex.: 3G simulado) em fluxos críticos; tratamento coerente de **offline parcial** onde o produto prever esse modo.
 
 ---
 
@@ -120,4 +121,4 @@ Ao pedir implementação, referenciar **secções** deste handbook e o **doc de 
 
 ---
 
-*Documento vivo — revisões devem manter compatibilidade com o índice e com os documentos 03–07.*
+*Documento vivo — revisões devem manter compatibilidade com o índice e com os documentos 03–07 e 00.*

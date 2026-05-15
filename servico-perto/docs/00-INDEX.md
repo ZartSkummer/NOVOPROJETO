@@ -12,7 +12,7 @@ Este pacote reúne análise multidisciplinar para um **marketplace de serviços 
 | 04 | [04-inventario-telas-ux-ui.md](./04-inventario-telas-ux-ui.md) | Inventário de telas, fluxos, notas de UX/UI |
 | 05 | [05-seguranca-informacao.md](./05-seguranca-informacao.md) | Ameaças, LGPD, autenticação, APIs, checklist |
 | 06 | [06-dba-dados.md](./06-dba-dados.md) | Modelo de dados, índices, geo, performance e retenção |
-| 07 | [07-qualidade-codigo-entrega.md](./07-qualidade-codigo-entrega.md) | Padrões, testes, CI/CD, definition of done |
+| 07 | [07-qualidade-codigo-entrega.md](./07-qualidade-codigo-entrega.md) | Resumo de entrega: testes, CI/CD, observabilidade; **norma detalhada** no doc 10 |
 | 08 | [08-precificacao-software-house.md](./08-precificacao-software-house.md) | Faixas BRL, composição de squad, o que encarece o projeto |
 | 09 | [09-backlog-epico.md](./09-backlog-epico.md) | Lista épica do que precisa ser feito (discovery até go-to-market) |
 | 10 | [10-handbook-padroes-desenvolvimento.md](./10-handbook-padroes-desenvolvimento.md) | **Handbook** normativo: índices, migrações, qualidade (smells, dead code), testes, UX de erros, `/docs`, Definition of Done |
